@@ -32,6 +32,15 @@ Suricata, Sysmon) -> triage (Lynx console) -> enrich (IocVerdict,
 DomainSieve, ArpSieve) -> respond (actions, osTicket) -> write up
 (investigation reports).
 
+## Verified against live data
+
+Not just built - run. Every project has a dated live-run writeup in its
+repo:
+
+- [Splunk replay](https://github.com/boluwajioadepojuw/SOCAtelier/blob/main/datasets/splunk-replay/README.md) - real Mordor Windows captures through the live Splunk lab; all five SPL detections fired (01/10/2026)
+- [IocVerdict live run](https://github.com/boluwajioadepojuw/IocVerdict/blob/main/docs/live-run-2026-10-01.md) - real Emotet/QakBot C2 IP and a live URLhaus malicious URL scored and MITRE-mapped
+- [DomainSieve live run](https://github.com/boluwajioadepojuw/DomainSieve/blob/main/docs/live-run-2026-10-01.md) - today's NRD feed: 1,157 domains, 2 real typosquats caught, 6 Suricata rules
+
 ## Working principles
 
 - Every lab run is a controlled simulation; the Linux cases are live on
